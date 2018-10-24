@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Link,Switch} from 'react-router-dom';
 import Home from '../pages/home/home';
 import User from '../pages/user/user';
 import Person from '../pages/user/person/person';
+// import AddTodo from '../pages/addTodo/addTodo';
 
 const appRouter = ()=> {
     return (
