@@ -2,7 +2,7 @@
 ===
     react + react-redux + less + webpack + es6
 运行项目
-===
+==
      npm i 
      npm run dev
      npm run build
