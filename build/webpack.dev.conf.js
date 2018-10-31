@@ -51,7 +51,7 @@ const devWebpackConfig = webpackMerge(webpackBaseConfig,{
             {
                 from: path.resolve(__dirname, '../static'),
                 to: config.dev.assetsSubDirectory,
-                ignore: ['.*']
+                ignore: ['.*'] 
             }
         ]),
         new webpack.HotModuleReplacementPlugin(),//热加载插件

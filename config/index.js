@@ -7,7 +7,29 @@ module.exports = {
         //path 配置开发环境基路径
         assetsSubDirectory: 'static',
         assetsPublicPath: '/',
-        proxyTable: {},
+        proxyTable: {
+            '/cangdu': {
+                target: 'http://api.cangdu.org:80',
+                secure: false,      // 如果是https接口，需要配置这个参数
+                changeOrigin: true,     // 如果接口跨域，需要进行这个参数配置
+                pathRewrite: {
+                  '^/cangdu': ''   //需要rewrite的,
+              } 
+              },
+            '/imgurl': {
+                target: 'http://elm.cangdu.org',
+                changeOrigin: true, 
+            },
+            "/ele":{
+                target: 'http://cangdu.org:8001', // 你接口的域名
+                secure: false,      // 如果是https接口，需要配置这个参数
+                changeOrigin: true,     // 如果接口跨域，需要进行这个参数配置
+                pathRewrite: {
+                  '^/ele': ''   //需要rewrite的,
+              } 
+              }
+            //
+        },
 
         // Various Dev Server settings
         host: 'localhost', // can be overwritten by process.env.HOST
@@ -29,7 +51,7 @@ module.exports = {
         // https://vue-loader.vuejs.org/en/options.html#cachebusting
         cacheBusting: true,
 
-        cssSourceMap: true
+        cssSourceMap: true,
     },
     build: {
         // Template for index.html
@@ -53,7 +75,7 @@ module.exports = {
         // Before setting to `true`, make sure to:
         // npm install --save-dev compression-webpack-plugin
         productionGzip: false,
-        productionGzipExtensions: ['js', 'css'],
+        productionGzipExtensions: ['js','jsx', 'css'],
 
         // Run the build command with an extra argument to
         // View the bundle analyzer report after build finishes:

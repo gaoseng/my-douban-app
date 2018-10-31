@@ -1,0 +1,53 @@
+@import '../../style/mixin.less';
+.production{
+    .wh(100%,100%);
+    background-color: #fff;
+    .pro-list-con{
+        margin-top: 3rem;
+        .pro-list-ul{
+            overflow: auto;
+            .pro-item{
+                // display: flex;
+                .wh(100%, 3rem);
+                padding: .4rem 0;
+                position: relative;
+                .font(1rem, #838080);
+                .pro-item-select{
+                    .positionLeft;
+                    .pro-select-status{
+                        margin-right: .2rem;
+                        
+                        .font(1.2rem, @font-color);
+                        &.pro-selected{
+                            .font(1.2rem, @base-color);
+                        }
+                    };
+                }
+                .pro-num{
+                    // .wh(1.6rem,3rem);
+                    width: .8rem;
+                    text-align: center;
+                    display: inline-block;
+                    .font(.8rem,@font-color,center);
+                }
+                .pro-item-edit{
+                    .positionRight;
+                    .icon-jian{
+                        margin-right: .2rem;
+                        .font(1.2rem, @font-color);
+                        &.edit-active{
+                            .font(1.2rem, @base-color);
+                        }
+                    }
+                    .icon-jia {
+                        margin-left: .5rem;
+                        .font(1.2rem, @base-color);
+                    }
+                    
+                }
+                
+            }
+        }
+        overflow: auto;
+    }
+}
