@@ -19,7 +19,6 @@ export default class Production extends Component {
         
     }
     togSelect(index){
-        console.log(index);
         store.dispatch(togSelectPro(index));
     }
     handleEdit(index,selectNum){
@@ -30,15 +29,18 @@ export default class Production extends Component {
     }
 
     componentDidMount() {
-         console.log(store.getState());
          let _this = this;
         store.dispatch(getProData());
         store.subscribe(res=>{
             _this.setState({
                 proData: store.getState().proData,
             });
-            console.log(_this.state);
         })
+    }
+    componentWillMount() {
+        // this.setState({
+        //     proData: store.getState().proData,
+        // });
     }
 
     render() {

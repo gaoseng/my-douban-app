@@ -17,8 +17,12 @@ module.exports = {
               } 
               },
             '/imgurl': {
-                target: 'http://elm.cangdu.org',
-                changeOrigin: true, 
+                target: 'http://elm.cangdu.org:80',
+                secure: false,      // 如果是https接口，需要配置这个参数
+                changeOrigin: true,     // 如果接口跨域，需要进行这个参数配置
+                pathRewrite: {
+                  '^/cangdu': ''   //需要rewrite的,
+              } 
             },
             "/ele":{
                 target: 'http://cangdu.org:8001', // 你接口的域名

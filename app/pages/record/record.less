@@ -1,0 +1,29 @@
+@import '../../style/mixin.less';
+.record{
+    margin-top: 2.25rem;
+    .record-nav-con{
+        position: relative;
+        .wh(100%, 2.25rem);
+        background-color: #fff;
+        .record-nav{
+            display: flex;
+            padding: .5rem;
+            span{
+                flex:1;
+                text-align: center;
+                // line-height: 1.85rem;
+                &:not(:last-child){
+                    border-right: 2px solid @base-gs;
+                }
+            }
+        }
+        .nav-flag-bar{
+            display: inline-block;
+            .wh(25%, .1rem);
+            background-color: @base-color;
+            position: absolute;
+            bottom: .1rem;
+            transition: left 300ms;
+        }
+    }
+}

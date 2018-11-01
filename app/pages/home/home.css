@@ -1,8 +1,66 @@
-.home {
-  background-color: #fff;
-  height: 100vh;
-  width: 100%;
-}
 .home form {
   margin-top: 2.25rem;
+}
+.home form .common-title {
+  font-size: 1rem;
+  color: #985ec9;
+  text-align: left;
+  padding: 1rem 1.5rem;
+}
+.home form .common-label {
+  display: block;
+  font-size: 0.8rem;
+  color: #333;
+  text-align: left;
+  padding: 1rem 1.5rem;
+  background-color: #fff;
+  border-bottom: 1px solid gainsboro;
+}
+.home form .common-label input {
+  border: none;
+  margin-left: 1rem;
+  font-size: 0.8rem;
+  color: #333;
+  text-align: left;
+}
+.home form .common-choose {
+  font-size: 1.2rem;
+  color: gainsboro;
+  text-align: center;
+  display: block;
+  width: 100%;
+  background-color: #fff;
+  border: none;
+  padding: 1.2rem 0;
+}
+.home form .file-label {
+  width: 100%;
+  height: 3.5rem;
+  position: relative;
+}
+.home form .file-label button {
+  position: absolute;
+}
+.home form .file-label input[type='file'] {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.home form .commit {
+  font-size: 1.2rem;
+  color: gainsboro;
+  text-align: center;
+  display: block;
+  width: calc(100% - 1rem);
+  background-color: #985ec9;
+  border: none;
+  padding: .8rem 0;
+  margin-top: 1.5rem;
+  margin-left: .5rem;
+  border-radius: .5rem;
 }

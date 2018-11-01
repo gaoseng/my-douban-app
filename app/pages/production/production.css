@@ -16,7 +16,7 @@
   padding: .4rem 0;
   position: relative;
   font-size: 1rem;
-  color: #838080;
+  color: #333;
   text-align: left;
 }
 .production .pro-list-con .pro-list-ul .pro-item .pro-item-select {
@@ -28,7 +28,7 @@
 .production .pro-list-con .pro-list-ul .pro-item .pro-item-select .pro-select-status {
   margin-right: .2rem;
   font-size: 1.2rem;
-  color: #838080;
+  color: #333;
   text-align: left;
 }
 .production .pro-list-con .pro-list-ul .pro-item .pro-item-select .pro-select-status.pro-selected {
@@ -40,7 +40,7 @@
   width: .8rem;
   display: inline-block;
   font-size: 0.8rem;
-  color: #838080;
+  color: #333;
   text-align: center;
 }
 .production .pro-list-con .pro-list-ul .pro-item .pro-item-edit {
@@ -52,7 +52,7 @@
 .production .pro-list-con .pro-list-ul .pro-item .pro-item-edit .icon-jian {
   margin-right: .2rem;
   font-size: 1.2rem;
-  color: #838080;
+  color: gainsboro;
   text-align: left;
 }
 .production .pro-list-con .pro-list-ul .pro-item .pro-item-edit .icon-jian.edit-active {

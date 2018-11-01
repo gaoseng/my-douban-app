@@ -34,6 +34,11 @@
   right: 1.5rem;
   transform: translate3d(0, -50%, 0);
 }
+.header-container .header-link.icon-jilu {
+  font-size: 1.2rem;
+  color: #fff;
+  text-align: left;
+}
 .header-container .nav-slide-list {
   position: fixed;
   top: 0;

@@ -5,27 +5,23 @@ import Home from '../pages/home/home';
 import './router.less';
 import asyncComponent from '../utils/asyncComponent';
 const Production = asyncComponent(() => import('@/pages/production/production'));
+const Record = asyncComponent( ()=> import('@/pages/record/record'));
 
 
 export default class RouteConfig extends Component {
     
     render() {
         return (
-            <HashRouter>
+            <Router>
                 <div>
-                    <ul className="footer">
-                        <li><Link to="/">热映</Link></li>
-                        <li><Link to="/production">产品</Link></li>
-                        
-                    </ul>
                     <Switch>
                         <Route exact path="/" component={Home}></Route>
                         <Route path="/production" component={Production}></Route>
-                        
+                        <Route path="/record" component={Record}></Route>
                     <Redirect to="/" />
                     </Switch>
                 </div>
-            </HashRouter>
+            </Router>
         )
     }
 }

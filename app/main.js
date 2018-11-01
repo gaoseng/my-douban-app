@@ -39,6 +39,18 @@ class App extends React.Component {
 }
 ReactDOM.render(<App />, document.getElementById('root'));
 
+const func = next=> action => value=> {
+    return next(action(value));
+}
+function next(f) {
+    return f;
+}
+function action(value) {
+    console.log(value);
+}
+func(next)(action)(123);
+
+
 
 
 

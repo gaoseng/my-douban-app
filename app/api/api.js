@@ -11,6 +11,17 @@ import axios from 'axios';
 export const getProduction = ()=> {
   return axios.get('/cangdu/shopro/data/products');
 }
+
+    /**
+    *  用途：上传图片
+    *  @url https://elm.cangdu.org/v1/addimg/shop
+    *  返回status为1表示成功
+    *  @method post
+    *  @return {promise}
+    */
+export const uploadImg =  (params = {})=> {
+    return axios.post('/imgurl/v1/addimg/shop', params)
+}
 // class API  {
 //     /**
 //     *  用途：上传图片

@@ -1,0 +1,29 @@
+.record {
+  margin-top: 2.25rem;
+}
+.record .record-nav-con {
+  position: relative;
+  width: 100%;
+  height: 2.25rem;
+  background-color: #fff;
+}
+.record .record-nav-con .record-nav {
+  display: flex;
+  padding: .5rem;
+}
+.record .record-nav-con .record-nav span {
+  flex: 1;
+  text-align: center;
+}
+.record .record-nav-con .record-nav span:not(:last-child) {
+  border-right: 2px solid gainsboro;
+}
+.record .record-nav-con .nav-flag-bar {
+  display: inline-block;
+  width: 25%;
+  height: 0.1rem;
+  background-color: #985ec9;
+  position: absolute;
+  bottom: .1rem;
+  transition: left 300ms;
+}
